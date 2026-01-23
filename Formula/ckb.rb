@@ -1,7 +1,7 @@
 class Ckb < Formula
   desc "Code intelligence orchestration layer for AI-assisted development"
   homepage "https://github.com/SimplyLiz/CodeMCP"
-  license "MIT"
+  license :cannot_represent
   version "8.0.3"
 
   on_macos do
