@@ -5,20 +5,20 @@
 class Ckb < Formula
   desc "Code intelligence orchestration layer for AI-assisted development"
   homepage "https://github.com/SimplyLiz/CodeMCP"
-  version "8.0.6"
+  version "8.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.0.6/ckb_8.0.6_darwin_amd64.tar.gz"
-      sha256 "c8a5a2ea0a6e2168717fbe195c31e2fe3cfe1fd040bf6a0f8c40dce2bbb71118"
+      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.1.0/ckb_8.1.0_darwin_amd64.tar.gz"
+      sha256 "7d380814a55c1dad96180944de059bc8396678455b24717d7f5b49bd44ba8599"
 
       def install
         bin.install "ckb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.0.6/ckb_8.0.6_darwin_arm64.tar.gz"
-      sha256 "f96675a5568d9789dff300b32aede6d44d4222bd59bc840183e86f3f5ad2438c"
+      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.1.0/ckb_8.1.0_darwin_arm64.tar.gz"
+      sha256 "411ae9b120d7231711a5689387e1563a78bbadb21ceb689710fa52de53adad90"
 
       def install
         bin.install "ckb"
@@ -28,15 +28,15 @@ class Ckb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.0.6/ckb_8.0.6_linux_amd64.tar.gz"
-      sha256 "03078b6c7c78b187b63e97341a62ff338992a169594b24c054c21a5e3f8d4efd"
+      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.1.0/ckb_8.1.0_linux_amd64.tar.gz"
+      sha256 "451ffab6e312fe83acd19fc37f9de33f7055cbe4248cb5148e0de985805abdcd"
       def install
         bin.install "ckb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.0.6/ckb_8.0.6_linux_arm64.tar.gz"
-      sha256 "08607b2c67aadb4aa3bab79290df9e2bcedea41cdefe76f624e9cc8ce9cabbcc"
+      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.1.0/ckb_8.1.0_linux_arm64.tar.gz"
+      sha256 "06382fbd97c837b47b98c7e2303536fb3b9a8adb82cd337717af000df24d15bc"
       def install
         bin.install "ckb"
       end
