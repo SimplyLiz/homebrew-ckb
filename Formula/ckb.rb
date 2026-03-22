@@ -5,22 +5,22 @@
 class Ckb < Formula
   desc "Code intelligence orchestration layer for AI-assisted development"
   homepage "https://github.com/SimplyLiz/CodeMCP"
-  version "8.1.0"
+  version "8.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.1.0/ckb_8.1.0_darwin_amd64.tar.gz"
-      sha256 "7d380814a55c1dad96180944de059bc8396678455b24717d7f5b49bd44ba8599"
+      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.2.0/ckb_8.2.0_darwin_amd64.tar.gz"
+      sha256 "5f7a4e6b860a2b7f3e322f5fdf27d69df3a1988e345f19c08b191499fea3780c"
 
-      def install
+      define_method(:install) do
         bin.install "ckb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.1.0/ckb_8.1.0_darwin_arm64.tar.gz"
-      sha256 "411ae9b120d7231711a5689387e1563a78bbadb21ceb689710fa52de53adad90"
+      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.2.0/ckb_8.2.0_darwin_arm64.tar.gz"
+      sha256 "cb7687e93dd91969baf17468a1c514d632c5eaff742830fe23d72e3444b4f9e0"
 
-      def install
+      define_method(:install) do
         bin.install "ckb"
       end
     end
@@ -28,16 +28,16 @@ class Ckb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.1.0/ckb_8.1.0_linux_amd64.tar.gz"
-      sha256 "451ffab6e312fe83acd19fc37f9de33f7055cbe4248cb5148e0de985805abdcd"
-      def install
+      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.2.0/ckb_8.2.0_linux_amd64.tar.gz"
+      sha256 "3af2c45702be3cfa0b4f682543ab895d74daed23bef1caa2057999f307ddc7d3"
+      define_method(:install) do
         bin.install "ckb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.1.0/ckb_8.1.0_linux_arm64.tar.gz"
-      sha256 "06382fbd97c837b47b98c7e2303536fb3b9a8adb82cd337717af000df24d15bc"
-      def install
+      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.2.0/ckb_8.2.0_linux_arm64.tar.gz"
+      sha256 "f5c20122223eb7e4f7b1775f0ba40e4f84df00a9be39e6b62781564ceea814a2"
+      define_method(:install) do
         bin.install "ckb"
       end
     end
