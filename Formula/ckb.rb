@@ -10,7 +10,7 @@ class Ckb < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.2.0/ckb_8.2.0_darwin_amd64.tar.gz"
-      sha256 "5f7a4e6b860a2b7f3e322f5fdf27d69df3a1988e345f19c08b191499fea3780c"
+      sha256 "49ddbddc1ee333856b8a05250843ad2111c2ccf54012223eaa759f336e2eb105"
 
       define_method(:install) do
         bin.install "ckb"
@@ -18,7 +18,7 @@ class Ckb < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.2.0/ckb_8.2.0_darwin_arm64.tar.gz"
-      sha256 "cb7687e93dd91969baf17468a1c514d632c5eaff742830fe23d72e3444b4f9e0"
+      sha256 "d58e9cb58eece83a190180622c75ec4686e1c6820e6a7eabdd6cfd22c4da4e1c"
 
       define_method(:install) do
         bin.install "ckb"
@@ -29,14 +29,14 @@ class Ckb < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.2.0/ckb_8.2.0_linux_amd64.tar.gz"
-      sha256 "3af2c45702be3cfa0b4f682543ab895d74daed23bef1caa2057999f307ddc7d3"
+      sha256 "31065ae679203a91a52a99dd65f4f98d528bc65521039ad3f165e2492d979f94"
       define_method(:install) do
         bin.install "ckb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.2.0/ckb_8.2.0_linux_arm64.tar.gz"
-      sha256 "f5c20122223eb7e4f7b1775f0ba40e4f84df00a9be39e6b62781564ceea814a2"
+      sha256 "0a0d74bc608e3a0a1c7efe66230021d6298a76280e5350e9289b026e7865a562"
       define_method(:install) do
         bin.install "ckb"
       end
