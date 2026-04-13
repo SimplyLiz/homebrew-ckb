@@ -5,20 +5,20 @@
 class Ckb < Formula
   desc "Code intelligence orchestration layer for AI-assisted development"
   homepage "https://github.com/SimplyLiz/CodeMCP"
-  version "8.3.0"
+  version "9.0.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.3.0/ckb_8.3.0_darwin_amd64.tar.gz"
-      sha256 "420f8795716767110e584bd6b8382897059d5d9b5e13cbb64a5ca79277908d8c"
+      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v9.0.0/ckb_9.0.0_darwin_amd64.tar.gz"
+      sha256 "261051969b1c438ad926d2554d0afa9828e3ef1c44e9d87e2eecb13e2259ce02"
 
       define_method(:install) do
         bin.install "ckb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.3.0/ckb_8.3.0_darwin_arm64.tar.gz"
-      sha256 "6e7f215e195955ddbe98383cef640c9899cca7fb1c518e61eb2a4ea949f20809"
+      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v9.0.0/ckb_9.0.0_darwin_arm64.tar.gz"
+      sha256 "91ab84419df29209e805f81915f6961626c3e5b7320d79180ac0eaa21c7ab1a5"
 
       define_method(:install) do
         bin.install "ckb"
@@ -28,15 +28,15 @@ class Ckb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.3.0/ckb_8.3.0_linux_amd64.tar.gz"
-      sha256 "74f046eb4a73d6387a3fcc98eebe6fc2cdad5a00f2e80f7494d96d52dbce5aff"
+      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v9.0.0/ckb_9.0.0_linux_amd64.tar.gz"
+      sha256 "64a209e837597022f7b6aba0d604d012dba8a7e87090af04cb36587dffa28aee"
       define_method(:install) do
         bin.install "ckb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v8.3.0/ckb_8.3.0_linux_arm64.tar.gz"
-      sha256 "ccc60b6793ac70b7ed5393766939a47b9703a00c87e273be74211d05503f0488"
+      url "https://github.com/SimplyLiz/CodeMCP/releases/download/v9.0.0/ckb_9.0.0_linux_arm64.tar.gz"
+      sha256 "b4ed8fc2a067f4f0eb32d9c9f0aca72cd2d1fd9cbf9e5af88c5ce233a07d0080"
       define_method(:install) do
         bin.install "ckb"
       end
