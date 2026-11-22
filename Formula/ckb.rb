@@ -2,26 +2,27 @@ class Ckb < Formula
   desc "Code intelligence orchestration layer for AI-assisted development"
   homepage "https://github.com/SimplyLiz/CodeMCP"
   version "9.4.0"
+  revision 1
 
   on_macos do
     on_arm do
       url "https://github.com/SimplyLiz/CodeMCP/releases/download/v9.4.0/ckb_9.4.0_darwin_arm64.tar.gz"
-      sha256 "faacbe538736a7c08ab4ac3d6c6b37935b8139ece1ac5cdd857a53c216ef41db"
+      sha256 "bcc1d07a55ef5583909a8adac2052371cc9c161b79054f1dac7fcf4c961a72da"
     end
     on_intel do
       url "https://github.com/SimplyLiz/CodeMCP/releases/download/v9.4.0/ckb_9.4.0_darwin_amd64.tar.gz"
-      sha256 "02d19bb0209a21c024bbce2076f334f35d3972d23ae32c17977bf8350b0d8952"
+      sha256 "3a883ff682cfa0a7fe1bb7dd5869ab02c5b7ac7434393f4920d673f97f5a1834"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/SimplyLiz/CodeMCP/releases/download/v9.4.0/ckb_9.4.0_linux_arm64.tar.gz"
-      sha256 "450e7896a381f7fc4006c371c7dac5d5c7c2fd58dacba644a16b91bb378b1a2b"
+      sha256 "e6f757794201300055212473c2f6dc8072e08cc13cdbd0c48c457473d9777a51"
     end
     on_intel do
       url "https://github.com/SimplyLiz/CodeMCP/releases/download/v9.4.0/ckb_9.4.0_linux_amd64.tar.gz"
-      sha256 "4d245246b3a106bd07bcf7106fb01f0c59c60abc30ab2b8a0383499bfe502813"
+      sha256 "f4ea2a65a52bf0eea9a64eae75f3b4df1c91788f68ac0e169be12c6f24835d99"
     end
   end
 
